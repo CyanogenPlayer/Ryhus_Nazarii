@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>lab10</title>
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		.text {
+			font-size: 17px;
+		}
+	</style>
+</head>
+
+<body>
+	<span class="text">main</span>
+	<form action="#">
+		<br>
+		<label>фірми:</label>
+		<select name="firma" style="margin-left: 112px; margin-bottom: 5px; width: 187px;">
+			<option value="firma_start" disabled="disabled" selected="selected">Оберіть фірму-виробника</option>
+			<option value="firma_sams">Самасунг</option>
+			<option value="firma_app">Аплє</option>
+			<option value="firma_nok">Нокія</option>
+		</select>
+		<br>
+		<label>модель:</label>
+		<select name="model" style="margin-left: 105px; margin-bottom: 5px;">
+			<option value="model_start" disabled="disabled" selected="selected">Оберіть модель телефону</option>
+			<option value="model_first">модель 1</option>
+			<option value="model_second">модель 2</option>
+			<option value="model_third">модель 3</option>
+		</select>
+		<br>
+		<input type="radio" name="display_color" value="color">з кольоровим дисплеєм<br>
+		<input type="radio" name="display_color" value="black" style="margin-bottom: 10px;">з чорно-білим дисплеєм<br>
+		<label>з ціною не вищою за*:</label>
+		<input type="number" name="value_of_money" min="0" step="0.1" style="width: 45px; margin-left: 5px; ">
+		<select name="currency" style="height: 21px; margin-left: -4px;">
+			<option value="currency_euro">євро</option>
+			<option value="currency_dollar">долар</option>
+			<option value="currency_hryvnia">гривня</option>
+		</select>
+		<br>
+		<br>
+		<br>
+		<br>
+		<label>Додаткові вимоги:</label>
+		<br>
+		<input type="checkbox" name="camera">Вбудована камера<br>
+		<input type="checkbox" name="dictaphone">Диктофон<br>
+		<input type="checkbox" name="games">Java-ігри<br>
+		<input type="checkbox" name="organizer">Органайзер<br>
+		<input type="checkbox" name="melodies">Мелодії<br>
+		<label>Моя електронна адреса</label>
+		<input type="email" name="usermail"><br>
+		<button type="submit" style="width: 165px; margin-left: 94px; margin-top: 7px;">Відправити запит</button>
+	</form>
+	<ul id="list">
+		<li>
+			<button onclick="body_bg_color()">background color</button>
+		</li>
+		<li>
+			<button onclick="body_border()">border</button>
+			<button onclick="body_outline()">outline</button>
+		</li>
+		<li>
+			<button onclick="ul_style()">list style</button>
+		</li>
+		<li>
+			<button onclick="body_margin()">margin</button>
+			<button onclick="body_padding()">padding</button>
+		</li>
+		<li>
+			<button onclick="body_text_color()">text color</button>
+			<button onclick="body_text_font()">text font</button>
+		</li>
+	</ul>
+	<script src="script.js"></script>
+</body>
+
+</html>
